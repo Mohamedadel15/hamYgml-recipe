@@ -1,0 +1,267 @@
+/*  google fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Ubuntu:ital,wght@0,500;1,400;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #fae3e3e4;
+  --main-background-color: #ffa500;
+  --text-shadow-bold: #303437 0 2px 2px;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(to right, #ffa500 50%, #303437 50%);
+  text-shadow: var(--text-shadow-bold);
+}
+
+.displayNone {
+  display: none;
+}
+
+/* navbar logo and img  */
+
+nav {
+  overflow: hidden;
+  width: 100%;
+  height: 70px;
+}
+.logo-div {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.logo-name {
+  display: block;
+  line-height: 5px;
+  font-size: 30px;
+  color: var(--main-color);
+  letter-spacing: 1px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.logo-name:hover {
+  color: #695a3f;
+}
+
+.style-of-y {
+  font-size: 35px;
+  font-weight: 700;
+  color: #c58e28;
+}
+
+/* end the logo nav bar and the logo img  */
+
+/* input felid  */
+
+.input-div {
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.input-text {
+  all: unset;
+  background-color: var(--main-color);
+  color: #2c2d2f;
+  height: 35%;
+  width: 40%;
+  border-radius: 25px;
+  padding: 2px;
+  margin-right: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  text-transform: capitalize;
+  text-shadow: #303437 0 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#input-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.btn-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* cards info  */
+
+section {
+  min-height: 70vh;
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cards {
+  width: 22%;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #fff2ee;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px 0px rgb(120, 111, 111);
+}
+.cards-image {
+  width: 100%;
+  height: 50%;
+}
+
+.card-meals-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cards-text {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meals-name {
+  height: 40%;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.more-details {
+  padding: 15px;
+  background-color: var(--main-background-color);
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: var(--main-color);
+  text-shadow: #303437 0 2px 2px;
+  transition: all 0.4s ease-in-out;
+}
+.more-details:hover {
+  background-color: #ac9261;
+}
+
+/* fixed section it show when u want to more details  */
+.fixed {
+  position: fixed;
+  right: 0;
+  top: 10%;
+}
+
+.container-fixed {
+  width: 80%;
+  height: 80%;
+  background-color: antiquewhite;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 20px;
+  background-color: var(--main-background-color);
+  color: var(--main-color);
+  box-shadow: 0px 0px 5px 0px rgb(120, 111, 111);
+  text-transform: capitalize;
+  position: relative;
+}
+
+.name {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 80px 0;
+}
+
+.country {
+  font-size: 35px;
+  margin: 20px 0;
+}
+.detail-about-meal {
+  font-size: 25px;
+  margin: 30px 0;
+}
+
+.fixedImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.link-youtube {
+  font-size: 25px;
+  text-align: center;
+  margin: 50px 0;
+  display: block;
+}
+.close {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.close img {
+  width: 100%;
+  height: 100%;
+}
+
+/* message not found if user entre the not valid name for meals */
+
+.messageNotFond {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-weight: 700;
+  width: 70%;
+  height: 150px;
+  background-color: var(--main-color);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.messageNotFond h1,
+.messageNotFond p {
+  display: block;
+  padding: 10px;
+}
