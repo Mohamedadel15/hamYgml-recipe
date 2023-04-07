@@ -108,7 +108,7 @@ nav {
 /* cards info  */
 
 section {
-  min-height: 70vh;
+  min-height: calc(100vh - 170px);
   width: 100%;
 }
 .container {
@@ -123,8 +123,7 @@ section {
   flex-wrap: wrap;
 }
 .cards {
-  width: 22%;
-  overflow: hidden;
+  width: 19%;
   height: 300px;
   border-radius: 10px;
   margin: 10px;
@@ -135,7 +134,7 @@ section {
 }
 .cards-image {
   width: 100%;
-  height: 50%;
+  height: 60%;
 }
 
 .card-meals-image {
@@ -148,7 +147,7 @@ section {
 
 .cards-text {
   width: 100%;
-  height: 50%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,7 +181,7 @@ section {
 .fixed {
   position: fixed;
   right: 0;
-  top: 10%;
+  top: 0;
 }
 
 .container-fixed {
@@ -213,6 +212,7 @@ section {
 .detail-about-meal {
   font-size: 25px;
   margin: 30px 0;
+  padding: 5px;
 }
 
 .fixedImage {
@@ -265,3 +265,59 @@ section {
   display: block;
   padding: 10px;
 }
+
+/* -------------------------- */
+
+/*   /* Styles for screens with a max width of 768px or less */
+
+@media only screen and (max-width: 768px) {
+  /* Styles for screens with a max width of 768px or less */
+
+  /* Add padding to body */
+  body {
+    padding: 0 20px;
+  }
+    /* center the loge div inside the nav */
+    .logo-div {
+      justify-content: center;
+    }
+
+  /* logo size  */
+  .logo-name {
+    font-size: 25px;
+  }
+  /* input filed */
+  .input-div{
+    width: 100%;
+  }
+  .input-text{
+    width: 90%;
+  }
+
+  /* update cards size  */
+  
+  .cards{
+    width: 60%;
+  }
+
+  /* resize height of fixed section  */
+  .fixed{
+    top: 50px;
+  }
+  .name{
+    font-size: 30px;
+    margin: 2.5em 0 20px 0;
+  }
+  .country{
+    font-size: 20px;
+    margin: 0;
+  }
+  .detail-about-meal{
+    font-size: 15px;
+  }
+  .close{
+    width: 40px;
+    height: 40px;
+  }
+}
+
