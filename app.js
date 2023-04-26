@@ -62,7 +62,7 @@ function getInputValue(){
         .then((data)=>{
             fixedSection.innerHTML=`
         <div class="container-fixed ">
-            <button class="close"><img src="/images/close-button.png" alt="button to close the fixed page"></button>
+            <button class="close"><img src="images/close-button.png" alt="button to close the fixed page"></button>
             <h1 class="name">${data.meals[0].strMeal}</h1>
             <h2 class="country">${data.meals[0].strArea}</h2>
             <p class="detail-about-meal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut eaque in reprehenderit magni dicta minus sit? Sequi nisi excepturi recusandae facere fugit, libero provident error veritatis debitis non ut perferendis.</p>
