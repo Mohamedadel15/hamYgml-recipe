@@ -4,43 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylee.css">
-    <script src="app.js" defer></script>
-    <title>HamYgmL</title>
+    <link rel="stylesheet" href="./css/inputStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- java script file  -->
+    <script src="./js/input.js" defer></script>
+    <title>Login | hum Y gml </title>
 </head>
 <body>
-    <!-- the main i contain all div and section in my page  -->
-    <main>
-        <!-- nav bar contain the logo name  -->
-        <nav>
-            <div class="logo-div">
-                <h1 class="logo-name">Ham<span class="style-of-y">Y</span>gmL</h1>
+    
+ <div class="container">
+    <div class="box">
+        <!------------------ Login Box --------------------->
+        <div class="box-login" id="login">
+
+            <div class="top-header">
+                <h3>Hello, Again</h3>
+                <small>We are happy to have you back.</small>
             </div>
-        </nav>
-
-        <!-- it feld input to search for the meals and contain the btn search  -->
-        <article>
-            <div class="input-div">
-                <input type="text" class="input-text" required title="please enter ur mail with the correct name">
-                <button id="input-btn"><img src="images/btn-search.png" alt="button search" class="btn-image" draggable="false"></button>
+            <div class="input-group">
+                <div class="input-field">
+                    <input type="text" class="input-box" id="logEmail" required>
+                    <label for="logEmail">Email address</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input-box" id="logPassword" required>
+                    <label for="logPassword">Password</label>
+                     <div class="eye-area">
+                            <div class="eye-box" onclick="myLogPassword()">
+                                <i class="fa-regular fa-eye" id="eye"></i>
+                                <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+                            </div>
+                     </div>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="formCheck" class="check">
+                    <label for="formCheck"> Remember Me</label>
+                </div>
+                <div class="input-field">
+                    <input type="submit" class="input-submit" value="Sign In">
+                </div>
+                <div class="forgot">
+                    <a href="#">Forgot password?</a>
+                </div>
             </div>
-        </article>
-        <!-- section one is the contain img & name for the product  -->
-        <section>
-            <div class="container">
+
+        </div>
+
+     <!-------------------- Register --------------------------->
+      
+     <div class="box-register" id="register">
+
+        <div class="top-header">
+            <h3>Sign Up, Now</h3>
+            <small>We are happy to have you with us.</small>
+        </div>
+        <div class="input-group">
+            <div class="input-field">
+                <input type="text" class="input-box" id="regUser" required>
+                <label for="regUser">Username</label>
             </div>
-        </section>
-        <section class="fixed displayNone">
-        </section>
+            <div class="input-field">
+                <input type="text" class="input-box" id="regEmail" required>
+                <label for="regEmail">Email address</label>
+            </div>
+            <div class="input-field">
+                <input type="password" class="input-box" id="regPassword" required>
+                <label for="regPassword">Password</label>
+                 <div class="eye-area">
+                        <div class="eye-box" onclick="myRegPassword()">
+                            <i class="fa-regular fa-eye" id="eye-2"></i>
+                            <i class="fa-regular fa-eye-slash" id="eye-slash-2"></i>
+                        </div>
+                 </div>
+            </div>
+            <div class="remember">
+                <input type="checkbox" id="formCheck-2" class="check">
+                <label for="formCheck-2"> Remember Me</label>
+            </div>
+            <div class="input-field">
+                <input type="submit" class="input-submit" value="Sign In">
+            </div>
+            
+        </div>
 
+    </div>
 
-        <!-- end nav  -->
+    <!------------------------ Switch -------------------------->
+      
+    <div class="switch">
+        <a href="#" class="login" onclick="login()">Login</a>
+        <a href="#" class="register" onclick="register()">Register</a>
+        <div class="btn-active" id="btn"></div>
+    </div>
 
+    </div>
+ </div>
+ <!-- popup un valid  -->
 
+ <div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>OOPS</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			please enter valid email OR password
+		</div>
+	</div>
+</div>
 
-
-
-
-    </main>
 </body>
 </html>

@@ -1,0 +1,5 @@
+1- beef
+2- egg
+3- Lamb
+4-Chicken
+5-Pork
